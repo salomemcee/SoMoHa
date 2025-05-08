@@ -1,37 +1,47 @@
+// Add slector index page
+
 import vPlayer from "./vPlayer.js";
 
+const sampleVid =  {
+  url: "./vids/Clickbait/ClickHolder1.mp4",
+  title: "Cute puppy",
+  desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga!",
+  img: "https://picsum.photos/200",
+};
+/*
 const videoList = [
   {
-    url: "./ClickHolder1.mp4",
+    url: "./vids/Clickbait/ClickHolder1.mp4",
     title: "Cute puppy",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga!",
     img: "https://picsum.photos/200",
   },
   {
-    url: "./ClickHolder1.mp4",
+    url: "./vids/Clickbait/ClickHolder2.mp4",
     title: "Winter migration",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga!",
     img: "https://picsum.photos/200",
   },
   {
-    url: "./ClickHolder1.mp4",
+    url: "./vids/Clickbait/ClickHolder3.mp4",
     title: "Lions",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga!",
     img: "https://picsum.photos/200",
   },
   {
-    url: "./ClickHolder1.mp4",
+    url: "./vids/Clickbait/ClickHolder4.mp4",
     title: "Graceful elephants",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga!",
     img: "https://picsum.photos/200",
   },
 ];
-
+*/
 // Videos Wrapper
 const videosWrapper = document.querySelector(".videos");
 
 // loader
 const loader = document.querySelector(".loader");
+
 
 setTimeout(() => {
   injectVideos();
@@ -39,9 +49,8 @@ setTimeout(() => {
 }, 2000);
 
 function injectVideos() {
-  videoList.forEach((video) => {
-    videosWrapper.innerHTML += vPlayer(video);
-  });
+  videosWrapper.innerHTML += vPlayer(video);
+}
 
   const vids = document.querySelectorAll(".vdo-wrapper");
 
@@ -61,36 +70,36 @@ function injectVideos() {
       }
     });
 
-    // handle like
-    const likeBtn = vid.querySelector("#like-btn");
-    likeBtn.addEventListener("click", () => {
-      likeBtn.classList.toggle("color-switch");
-      dislikeBtn.classList.remove("color-switch");
-    });
+    // // handle like
+    // const likeBtn = vid.querySelector("#like-btn");
+    // likeBtn.addEventListener("click", () => {
+    //   likeBtn.classList.toggle("color-switch");
+    //   dislikeBtn.classList.remove("color-switch");
+    // });
 
-    // handle dislike
-    const dislikeBtn = vid.querySelector("#dislike-btn");
-    dislikeBtn.addEventListener("click", () => {
-      dislikeBtn.classList.toggle("color-switch");
-      likeBtn.classList.remove("color-switch");
-    });
+    // // handle dislike
+    // const dislikeBtn = vid.querySelector("#dislike-btn");
+    // dislikeBtn.addEventListener("click", () => {
+    //   dislikeBtn.classList.toggle("color-switch");
+    //   likeBtn.classList.remove("color-switch");
+    // });
 
-    // handle dislike
-    const commentsBtn = vid.querySelector("#comments-btn");
-    const comments = vid.querySelector(".comments");
-    commentsBtn.addEventListener("click", () => {
-      comments.classList.toggle("toggle-comments");
-    });
+    // // handle dislike
+    // const commentsBtn = vid.querySelector("#comments-btn");
+    // const comments = vid.querySelector(".comments");
+    // commentsBtn.addEventListener("click", () => {
+    //   comments.classList.toggle("toggle-comments");
+    // });
 
-    // handle share
-    const shareBtn = vid.querySelector("#share-btn");
-    const vidTitle = vid.querySelector(".info-wrapper h3");
-    shareBtn.addEventListener("click", () => {
-      navigator.share({
-        title: vidTitle.textContent,
-        text: "text",
-        url: vdo.src,
-      });
-    });
+    // // handle share
+    // const shareBtn = vid.querySelector("#share-btn");
+    // const vidTitle = vid.querySelector(".info-wrapper h3");
+    // shareBtn.addEventListener("click", () => {
+    //   navigator.share({
+    //     title: vidTitle.textContent,
+    //     text: "text",
+    //     url: vdo.src,
+    //   });
+    // });
   });
 }
