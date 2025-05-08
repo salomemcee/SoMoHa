@@ -2,25 +2,25 @@ import vPlayer from "./vPlayer.js";
 
 const videoList = [
   {
-    url: "./vids/1.mp4",
+    url: "./ClickHolder1.mp4",
     title: "Cute puppy",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga!",
     img: "https://picsum.photos/200",
   },
   {
-    url: "./vids/2.mp4",
+    url: "./ClickHolder1.mp4",
     title: "Winter migration",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga!",
     img: "https://picsum.photos/200",
   },
   {
-    url: "./vids/3.mp4",
+    url: "./ClickHolder1.mp4",
     title: "Lions",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga!",
     img: "https://picsum.photos/200",
   },
   {
-    url: "./vids/4.mp4",
+    url: "./ClickHolder1.mp4",
     title: "Graceful elephants",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fuga!",
     img: "https://picsum.photos/200",
