@@ -50,7 +50,6 @@ setTimeout(() => {
 
 function injectVideos() {
   videosWrapper.innerHTML += vPlayer(video);
-}
 
   const vids = document.querySelectorAll(".vdo-wrapper");
 
